@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--color-MainColor);
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
