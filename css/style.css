@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* color */
+:root {
+  --color-MainColor: #24292F;
+  --color-SubColor: #7D87A8;
+  --color-Line1: #57606A;
+  --color-Line2: #FD8C73;
+  --color-Text0: #FFFFFF;
+}
+
 .content { 
   height: 100vh;
 }
@@ -10,7 +19,7 @@
 }
 .header .menu {
   display: flex;
-  justify-content: center;
+  margin-left: 430px;
 }
 .header .menu-list {
   font-size: 20px;
@@ -36,20 +45,27 @@
   margin-right: 10px;
   display: inline-block;
   vertical-align: middle;
+  filter: invert(100%);
 }
 
 /* container */
 /* profile */
 .container {
   display: flex;
+  height: 90vh;
+}
+.profile-wrap {
+  padding: 0 50px;
+  height: 90vh;
 }
 .profile {
   position: relative;
-  top: -60px;
   width: 330px;
+  height: 90vh;
 }
 .profile .logo {
   position: relative;
+  top: -20px;
   width: 330px;
   height: 330px;
   background: var(--color-SubColor);
@@ -65,8 +81,8 @@
 .profile .logo .mbti {
   width: 45px;
   height: 45px;
-  top: 75%;
-  left: 95%;
+  top: 80%;
+  left: 90%;
   border-radius: 50px;
 }
 .profile .tag {
@@ -126,25 +142,26 @@
 }
 
 /* copyright */
-.copyright, .info  {
-  position: relative;
+.profile-bottom {
+  position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 15px;
+}
+.copyright, .info  {
   color: var(--color-Line1);
   font-size: 12px;
 }
 /* readme */
 .readme {
-  border: 1px solid red;
-  width: 70%;
-  margin-left: auto;
+  width: 100%;
+  padding: 30px 50px 30px 0px;
 }
 .readme .box {
   border: 1px solid var(--color-Line1);
   border-radius: 20px;
   height: 100%;
 }
-.readme .box h2 {
-  border: 1px solid var(--color-Line1);
-  padding: 20px;
+.readme .box h3 {
+  border-bottom: 1px solid var(--color-Line1);
+  padding: 25px 0 25px 40px;
 }
