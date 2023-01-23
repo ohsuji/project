@@ -5,6 +5,8 @@
   top: 0;
   left: 0;
   right: 0;
+  background: var(--color-MainBg);
+  z-index: 999;
 }
 .header .menu-list:first-child{
   border-bottom: 0;
@@ -92,8 +94,91 @@
 
 /* project-detail */
 .project-detail {
-  margin-left: 430px;
+  width: 100%;
+  height: 100%;
+  padding-top: 160px;
+  margin: 0 50px 30px 350px;
 }
-.project-detail .project-img {
-  width: 500px;
+.border-wrap {
+  position: relative;
+}
+.border {
+  border: 1px solid red;
+  padding: 4% 6%;
+  margin: 0 auto;
+}
+.screen {
+  border: 3px solid var(--color-SubColor);
+  border-radius: 20px;
+  /* for aspect ratio */
+  position: relative;
+  width: 100%;
+  background: var(--color-MainBg);
+}
+
+.screen:before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+.viewport {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 4%;
+}
+
+/* Screenshot Hover Scroll Additions ------ */
+.border .viewport {
+  transition: background-position 20s;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.border:hover .viewport {
+  background-position: 0 100%;
+}
+
+/* scroll */
+.scroll-downs {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  margin: auto;
+  width : 30px;
+  height: 30px;
+  padding-top: 15px
+}
+.scroll-downs .mousey {
+  width: 3px;
+  padding: 3px 8px;
+  height: 28px;
+  border: 2px solid var(--color-SubColor);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroll-downs p {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--color-SubColor);
+}
+.scroll-downs .scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: var(--color-SubColor);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
