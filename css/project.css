@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.header-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header .menu-list:first-child{
+  border-bottom: 0;
+}
+.header .menu-list:first-child:hover{
+  border-bottom: 2px solid var(--color-Line2);
+}
+.header .menu-list:nth-child(2) {
+  border-bottom: 2px solid var(--color-Line2);
+}
+.sub-header {
+  height: 80px;
+}
+.sub-header .sub-menu {
+  display: flex;
+  margin-left: 430px;
+}
+.sub-header .sub-menu-list {
+  line-height: 80px;
+  margin-right: 50px;
+}
+.sub-header .sub-menu-list a {
+  font-size: 15px;
+  transition: .4s;
+}
+.sub-header .sub-menu-list a:hover {
+  color: var(--color-Line1);
+} 
+.header .menu-list:last-child {
+  margin-right: 0px;
+}
+.header .menu-list a {
+  padding: 10px 10px 10px 3px;
+}
+.header .menu-list img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  filter: invert(100%);
+}
+
+/* profile */
+.profile {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+}
+/* repositories */
+.repositories h4 {
+  padding: 20px 0 10px 0;
+}
+.repositories img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 10px;
+  vertical-align: middle;
+  background: var(--color-SubColor);
+  border-radius: 50px;
+  padding: 3px;
+}
+.repositories .repositories-list {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  transition: .4s;
+}
+.repositories .repositories-list:hover {
+  background: var(--color-Line1);
+  border-radius: 5px;
+}
+.repositories .repositories-list:first-child {
+  background: var(--color-Line1);
+  border-radius: 5px;
+}
+.repositories .repositories-list a {
+  display: block;
+  font-size: 13px;
+}
+.repositories .repositories-list span {
+  color: var(--color-SubColor);
+}

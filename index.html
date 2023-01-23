@@ -8,7 +8,7 @@
   <title>PORTFOLIO</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <script defer src="./main.js"></script>
 </head>
 <body>
@@ -16,17 +16,17 @@
     <div class="header">
       <nav class="">
         <ul class="menu">
-          <li class="menu-list"><a href="/"><img src="img/menu_book.png" alt="Overview">Overview</a></li>
-          <li class="menu-list"><a href="#"><img src="img/folder.png" alt="Project">Project</a></li>
-          <li class="menu-list"><a href="#"><img src="img/star.png" alt="Contact">Contact</a></li>
+          <li class="menu-list"><a href="index.html"><img src="img/menu_book.png" alt="Overview">Overview</a></li>
+          <li class="menu-list"><a href="project.html"><img src="img/folder.png" alt="Project">Project</a></li>
+          <li class="menu-list"><a href="contact.html"><img src="img/star.png" alt="Contact">Contact</a></li>
         </ul>
       </nav>
-    </div> <!-- header -->
+    </div> <!-- header// -->
     <div class="container">
       <div class="profile-wrap">
         <div class="profile">
           <div class="logo">
-            <a href="/"><img src="img/logo_face.png" alt="logo"></a>
+            <a href="contact.html"><img class="mimoji" src="img/logo_face.png" alt="logo"></a>
             <img class="mbti" src="img/isfp.jpeg" alt="isfp">
           </div>
           <div class="tag">
@@ -62,19 +62,40 @@
             <span class="copyright">© 2023 OH SUJI ALL RIGHT RESERVED.</span>
             <p class="info">Mobile Ver은 제작중 입니다.</p>
           </div>
-        </div> <!-- profile -->
+        </div> <!-- profile// -->
       </div>
       <div class="readme">
-        <div class="box">
-          <h3>README.md</h3>
-          <div class="reademe-name">
-            <p>오수지</ㅔ>
-            <span>프론트엔드 | 신입</span>
+        <div class="readme-wrap">
+          <h4>README.md</h4>
+          <div class="readme-detail">
+            <div class="readme-name">
+              <h1>오수지</h1>
+              <h3>프론트엔드 | 신입</h3>
+            </div>
+            <div class="readme-about">
+              <h1>ABOUT ME</h1>
+              <ul>
+                <li>1990. 09. 03.</li>
+                <li>서울시 강서구</li>
+              </ul>
+            </div>
+            <div class="readme-edu">
+              <h1>EDUCATION</h1>
+              <ul class="edu-list">
+                <li>
+                  프로젝트기반 프론트엔드(React, Vue)<br />
+                  웹&앱 SW개발자 양성과정 수료
+                </li>
+                <li>2022. 07. 13. ~ 2023. 01. 05.</li>
+              </ul>
+            </div>
+            <div class="learn-more">
+              <button>Learn More</button>
+            </div>
           </div>
-          <p></p>
         </div>
       </div>
-    </div> <!-- content -->
+    </div> <!-- content// -->
   </div>
 </body>
 </html>

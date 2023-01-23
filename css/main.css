@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* color */
+:root {
+  --color-MainColor: #24292F;
+  --color-SubColor: #7D87A8;
+  --color-Line1: #57606A;
+  --color-Line2: #FD8C73;
+  --color-Text0: #FFFFFF;
+}
+
+.content { 
+  height: 100vh;
+}
+/* header */
+.header {
+  border-bottom: 1px solid var(--color-Line1);
+  height: 80px;
+}
+.header .menu {
+  display: flex;
+  margin-left: 430px;
+}
+.header .menu-list {
+  font-size: 20px;
+  line-height: 80px;
+  margin-right: 35px;
+  transition: .3s;
+}
+.header .menu-list:first-child {
+  border-bottom: 2px solid var(--color-Line2);
+}
+.header .menu-list:last-child {
+  margin-right: 0px;
+}
+.header .menu-list:hover {
+  border-bottom: 2px solid var(--color-Line2);
+}
+.header .menu-list a {
+  padding: 10px 10px 10px 3px;
+}
+.header .menu-list img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  filter: invert(100%);
+}
+
+/* container */
+/* profile */
+.container {
+  display: flex;
+  height: 90vh;
+}
+.profile-wrap {
+  padding: 0 50px;
+  height: 90vh;
+}
+.profile {
+  position: relative;
+  top: -20px;
+  width: 330px;
+  height: 90vh;
+}
+.profile .logo {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  background: var(--color-SubColor);
+  border-radius: 999px;
+}
+.profile .logo .mimoji {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 250px;
+  transform: translate(-50%, -40%);
+  transition: all .5s;
+}
+.profile .logo .mimoji:hover {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: rotate(-5deg);
+}
+.profile .logo .mbti {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 80%;
+  left: 80%;
+  border-radius: 50px;
+}
+.profile .tag {
+  height: 50px;
+  margin-top: 30px;
+}
+.profile .tag p {
+  line-height: 50px;
+  text-align: center;
+  background: var(--color-Line1);
+  border-radius: 10px;
+  font-size: 18px;
+}
+.profile .name p {
+  text-align: center;
+  font-size: 35px;
+}
+.profile .url {
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid var(--color-Line1);
+}
+.profile .url-list:last-child {
+  margin-top: 8px;
+}
+.profile .url-list a {
+  transition: .4s;
+}
+.profile .url-list a:hover {
+  color: var(--color-Line1);
+}
+/* skills */
+.profile .skills p {
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+}
+.profile .skill, .control {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile .skill-list, .control-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  margin: 0 10px 10px 0;
+  height: 25px;
+  font-size: 12px;
+  background: var(--color-Text0);
+  color: var(--color-MainColor);
+  border-radius: 3px;
+}
+.profile .control-list img, .skill-list img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+/* copyright */
+.profile-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.copyright, .info  {
+  color: var(--color-Line1);
+  font-size: 12px;
+}
+/* readme */
+.readme {
+  width: 100%;
+  padding: 50px 50px 30px 0px;
+}
+.readme .readme-wrap{
+  border: 1px solid var(--color-Line1);
+  border-radius: 20px;
+  height: 100%;
+}
+.readme .readme-wrap h4 {
+  border-bottom: 1px solid var(--color-Line1);
+  padding: 25px 0 25px 40px;
+}
+.readme .readme-detail {
+  width: 70%;
+  margin: auto;
+  padding: 50px 0;
+}
+.readme .readme-name {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.readme-name, .readme-about, .readme-edu {
+  padding: 10px;
+}
+.readme .readme-about h1, .readme-edu h1 {
+  border-bottom: 1px solid var(--color-Line1);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: var(--color-SubColor);
+}
+.readme .edu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.readme .learn-more {
+  text-align: center;
+  margin-top: 60px;
+}
+.readme .learn-more button{
+  width: 150px;
+  height: 45px;
+  font-size: 23px;
+  border-radius: 8px;
+  background: var(--color-SubColor);
+  cursor: pointer;
+}
+.readme .learn-more button:active {
+  transform: translateY(1px);
+}
