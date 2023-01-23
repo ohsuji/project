@@ -5,8 +5,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background: var(--color-MainBg);
-  z-index: 999;
+  background: #24292F;
+  z-index: 10;
 }
 .header .menu-list:first-child{
   border-bottom: 0;
@@ -49,14 +49,32 @@
   vertical-align: middle;
   filter: invert(100%);
 }
-
 /* profile */
 .profile {
   position: fixed;
   top: 60px;
   bottom: 0;
+  z-index: 15;
 }
 /* repositories */
+.repositories ul {
+  height: 30vh;
+}
+.repositories ul {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.repositories ul::-webkit-scrollbar {
+  width: 3px;
+}
+.repositories ul::-webkit-scrollbar-thumb {
+  height: 5%;
+  background: var(--color-SubColor);
+  border-radius: 10px;
+}
+.repositories ul::-webkit-scrollbar-track {
+  background: var(--color-Line1);
+}
 .repositories h4 {
   padding: 20px 0 10px 0;
 }
@@ -96,15 +114,13 @@
 .project-detail {
   width: 100%;
   height: 100%;
-  padding-top: 160px;
-  margin: 0 50px 30px 350px;
+  margin: 160px 50px 30px 350px;
 }
 .border-wrap {
   position: relative;
 }
 .border {
-  border: 1px solid red;
-  padding: 4% 6%;
+  padding-bottom: 4%;
   margin: 0 auto;
 }
 .screen {
@@ -115,7 +131,6 @@
   width: 100%;
   background: var(--color-MainBg);
 }
-
 .screen:before {
   content: "";
   display: block;
@@ -129,7 +144,6 @@
   top: 0;
   margin: 4%;
 }
-
 /* Screenshot Hover Scroll Additions ------ */
 .border .viewport {
   transition: background-position 20s;
@@ -150,7 +164,7 @@
   margin: auto;
   width : 30px;
   height: 30px;
-  padding-top: 15px
+  padding-top: 10px
 }
 .scroll-downs .mousey {
   width: 3px;
@@ -164,7 +178,7 @@
 .scroll-downs p {
   font-size: 10px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
   color: var(--color-SubColor);
 }
 .scroll-downs .scroller {
@@ -181,4 +195,10 @@
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
+}
+
+@media (max-width: 1400px) {
+  .scroll-downs {
+    display: none;
+  }
 }
