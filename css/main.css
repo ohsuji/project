@@ -79,12 +79,6 @@
   transform: translate(-50%, -40%);
   transition: all .5s;
 }
-.profile .logo .mimoji:hover {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  transform: rotate(-5deg);
-}
 .profile .logo .mbti {
   position: absolute;
   width: 45px;

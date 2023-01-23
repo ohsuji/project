@@ -89,3 +89,11 @@
 .repositories .repositories-list span {
   color: var(--color-SubColor);
 }
+
+/* project-detail */
+.project-detail {
+  margin-left: 430px;
+}
+.project-detail .project-img {
+  width: 500px;
+}
