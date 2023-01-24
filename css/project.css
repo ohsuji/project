@@ -209,3 +209,13 @@
     display: none;
   }
 }
+
+/* exposition */
+.exposition {
+  padding: 70px 30px;
+}
+@media (max-width: 1300px) {
+  .exposition {
+    padding: 30px 30px;
+  }
+}
