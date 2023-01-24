@@ -183,6 +183,36 @@
   margin: auto;
   padding: 30px 0;
 }
+/* move-text */
+.move-text {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-left: .6rem;
+}
+
+h1::after {
+  content: '';
+  margin-left: .4rem;
+  border-right: 2px solid #777;
+  animation: cursor .9s infinite steps(2);
+}
+
+@keyframes cursor {
+  from { border-right: 2px solid #222; }
+  to { border-right: 2px solid #777; }
+}
+
+/* ------------ */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+
 /* intro-box */
 
 /* most-used */
