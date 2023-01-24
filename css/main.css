@@ -7,6 +7,7 @@
   --color-Line1: #57606A;
   --color-Line2: #FD8C73;
   --color-Text0: #FFFFFF;
+  --color-Point: #66cdaa;
 }
 
 .content { 
@@ -161,7 +162,6 @@
 .readme .readme-wrap{
   border: 1px solid var(--color-Line1);
   border-radius: 20px;
-  height: 100%;
 }
 .readme .readme-header {
   display: flex;
@@ -181,7 +181,7 @@
 .readme .readme-detail {
   width: 70%;
   margin: auto;
-  padding: 30px 0;
+  padding: 30px 0 50px 0;
 }
 /* move-text */
 .move-text {
@@ -214,7 +214,39 @@ h1::after {
 
 
 /* intro-box */
-
+.intro-box {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  margin: 30px 0;
+}
+.intro-box h2 {
+  margin-bottom: 10px;
+  color: var(--color-Point);
+}
+.intro-box h2:nth-of-type(2) {
+  margin-top: 10px;
+} 
+.intro-box .intro>li, .like>li {
+  text-indent: 1rem;
+}
+.intro-box .intro-wrap, .like-wrap {
+  width: 48%;
+  border: 1px solid var(--color-SubColor);
+  border-radius: 20px;
+  padding: 20px;
+}
+@media (max-width: 1300px) {
+  .intro-box {
+    display: block;
+  }
+  .intro-box .intro-wrap {
+    margin-bottom: 30px;
+  }
+  .intro-box .intro-wrap, .like-wrap {
+    width: 100%;
+  }
+}
 /* most-used */
 .most-box {
   border: 1px solid var(--color-SubColor);
@@ -222,7 +254,7 @@ h1::after {
   padding: 25px;
 }
 .most-box h3 {
-  color: mediumaquamarine;
+  color: var(--color-Point);
   margin-bottom: 20px;
 }
 .most-box .most-bar {
@@ -304,18 +336,12 @@ h1::after {
 }
 
 /* resume-button */
-.readme .resume {
+.resume {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 50px;
 }
-.readme .resume button{
-  width: 150px;
-  height: 45px;
-  font-size: 23px;
-  border-radius: 8px;
-  background: var(--color-SubColor);
-  cursor: pointer;
-}
-.readme .resume button:active {
-  transform: translateY(1px);
+.resume a {
+  background: var(--color-Point);
+  padding: 8px 10px;
+  border-radius: 10px;
 }
