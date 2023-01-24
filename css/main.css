@@ -183,30 +183,101 @@
   margin: auto;
   padding: 50px 0;
 }
-.readme .readme-name {
+
+/* most-used */
+.most-box {
+  border: 1px solid var(--color-SubColor);
+  border-radius: 20px;
+  padding: 25px;
+}
+.most-box h3 {
+  color: mediumaquamarine;
+  margin-bottom: 20px;
+}
+.most-box .most-bar {
   display: flex;
-  flex-direction: column;
-  align-items: end;
+  width: 100%;
+  height: 6px;
 }
-.readme-name, .readme-about, .readme-edu {
-  padding: 10px;
+.most-box .most-bar span {
+  font-size: 0px;
+  margin-right: 4px;
 }
-.readme .readme-about h1, .readme-edu h1 {
-  border-bottom: 1px solid var(--color-Line1);
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  color: var(--color-SubColor);
+.most-box .most-bar span:first-child {
+  width: 36%;
+  height: 6px;
+  background: #e34c26;
+  border-radius: 5px 0 0 5px;
 }
-.readme .edu-list {
+.most-box .most-bar span:nth-child(2) {
+  width: 42%;
+  height: 6px;
+  background: #563d7c;
+}
+.most-box .most-bar span:nth-child(3) {
+  width: 9%;
+  height: 6px;
+  background: #c6538c;
+}
+.most-box .most-bar span:nth-child(4) {
+  width: 6%;
+  height: 6px;
+  background: #f1e05a;
+}
+.most-box .most-bar span:nth-child(5) {
+  width: 4%;
+  height: 6px;
+  background: #58c1db;
+}
+.most-box .most-bar span:nth-child(6) {
+  width: 3%;
+  height: 6px;
+  background: #42ba85;
+  border-radius: 0 5px 5px 0;
+}
+.most-box ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.most-box .most-list {
+  padding-top: 15px;
+}
+.most-list ul>li {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.most-list ul>li {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.most-list ul>li span {
+  font-size: 10px;
+  border-radius: 20px;
+  background: #e34c26;
+  padding: 1px 4px;
+}
+.most-list ul>li:nth-child(2) span {
+  background: #563d7c;
+}
+.most-list ul>li:nth-child(3) span {
+  background: #c6538c;
+}
+.most-list ul>li:nth-child(4) span {
+  background: #f1e05a;
+}
+.most-list ul>li:nth-child(5) span {
+  background: #58c1db;
+}
+.most-list ul>li:nth-child(6) span {
+  background: #42ba85;
 }
 
-.readme .learn-more {
+/* resume-button */
+.readme .resume {
   text-align: center;
   margin-top: 60px;
 }
-.readme .learn-more button{
+.readme .resume button{
   width: 150px;
   height: 45px;
   font-size: 23px;
@@ -214,6 +285,6 @@
   background: var(--color-SubColor);
   cursor: pointer;
 }
-.readme .learn-more button:active {
+.readme .resume button:active {
   transform: translateY(1px);
 }
