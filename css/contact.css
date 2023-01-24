@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+/* header */
+.header .menu-list:first-child{
+  border-bottom: 0;
+}
+.header .menu-list:first-child:hover{
+  border-bottom: 2px solid var(--color-Line2);
+}
+.header .menu-list:nth-child(3) {
+  border-bottom: 2px solid var(--color-Line2);
+}
+
+/* contact */
 .contact {
   width: 100%;
   padding: 50px 50px 30px 0px;

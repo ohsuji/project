@@ -8,11 +8,34 @@
   box-sizing: border-box;
   color: #fff;
 }
+
+/* body */
 body {
   font-family: 'Noto Sans KR', sans-serif;
   background: var(--color-MainColor);
   min-width: 970px;
+  animation: fadein 2000ms ease-out;
+  -moz-animation: fadein 2000ms ease-out; /* Firefox */
+  -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+  -o-animation: fadein 2000ms ease-out; /* Opera */
 }
+@keyframes fadein {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {opacity:0;}
+  to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {opacity:0;}
+  to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+
 img {
   max-width: 100%;
 }
@@ -23,16 +46,15 @@ a {
   text-decoration: none;
 }
 
+/* scrollbar */
 body::-webkit-scrollbar {
   width: 8px;  /* 스크롤바의 너비 */
 }
-
 body::-webkit-scrollbar-thumb {
   height: 30%; /* 스크롤바의 길이 */
   background: var(--color-SubColor); /* 스크롤바의 색상 */
   border-radius: 10px;
 }
-
 body::-webkit-scrollbar-track {
   background: var(--color-Line1); /*스크롤바 뒷 배경 색상*/
 }
