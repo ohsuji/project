@@ -11,7 +11,7 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   background: var(--color-MainColor);
-  min-width: 960px;
+  min-width: 970px;
 }
 img {
   max-width: 100%;
