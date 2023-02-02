@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/project.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script defer src="./main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <style>
   .repositories .repositories-list:first-child {
@@ -112,16 +114,23 @@
             <p>Scroll Down</p>
           </div>
         </div>
-        <div class="exposition">
-          <h2><span>〉</span> PROJECT | ZARA</h2>
-          <ul>
-            <li>React</li>
-            <li>작성중</li>
-            <li>작성중</li>
-          </ul>
+        <div class="project-info" data-aos="fade-right"
+        data-aos-duration="3000">
+          <h2>〉 PROJECT | ZARA</h2>
+          <div>
+            <h3>React SPA 웹 제작 프로젝트</h3>
+            <ul>
+              <li>- 기간 : 2022. 12</li>
+              <li>- 기여도 : 개인 100%</li>
+              <li>- Bootstrap을 이용한 상단 이미지 슬라이드 및 반응형 웹 제작</li>
+              <li>- 검색, 로그인 기능 구현</li>
+              <li>- router를 이용한 페이지 렌더링</li>
+            </ul>
+          </div>
         </div>
       </div> <!-- project-detail// -->
     </div> <!-- container// -->
   </div> <!-- content// -->
+  <script>AOS.init();</script>
 </body>
 </html>

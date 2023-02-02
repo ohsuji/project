@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/project.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script defer src="./main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <style>
   .repositories .repositories-list:first-child {
@@ -112,16 +114,21 @@
             <p>Scroll Down</p>
           </div>
         </div>
-        <div class="exposition">
-          <h2><span>〉</span> PROJECT | 60 SECONDS</h2>
-          <ul>
-            <li>BOOTSTRAP</li>
-            <li>작성중</li>
-            <li>작성중</li>
-          </ul>
+        <div class="project-info" data-aos="fade-right"
+        data-aos-duration="3000">
+          <h2>〉 PROJECT | 60 SECONDS</h2>
+          <div>
+            <h3>메인 페이지 제작 프로젝트</h3>
+            <ul>
+              <li>- 기간 : 2022. 9</li>
+              <li>- 기여도 : 개인 100%</li>
+              <li>- Bootstrap을 활용한 반응형 웹</li>
+            </ul>
+          </div>
         </div>
       </div> <!-- project-detail// -->
     </div> <!-- container// -->
   </div> <!-- content// -->
+  <script>AOS.init();</script>
 </body>
 </html>
